@@ -14,13 +14,13 @@ export default function Nav({ items = [] }: NavProps) {
   const location = useLocation()
   return (
     <nav className="bg-base-100 shadow-lg p-4">
-      <div className="navbar max-w-[1200px] mx-auto grid grid-cols-12">
-        <div className="col-span-3">
+      <div className="navbar max-w-800 mx-auto grid grid-cols-3">
+        <div className="col-span-1">
           <Link to="/" className="btn btn-ghost normal-case text-xl">
             <img src={Logo} alt="Logo" className="h-12" />
           </Link>
         </div>
-        <ul className="menu menu-horizontal px-1 col-span-9 font-bold">
+        <ul className="menu menu-horizontal px-1 col-span-2 font-bold">
           {items.map((item) => (
             <li
               key={item.path}

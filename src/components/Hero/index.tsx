@@ -1,9 +1,10 @@
 import heroImage from '@/assets/hero.png'
+import Button from '@/components/Button'
 
 export default function Hero() {
   return (
-    <section className="bg-green text-white py-16 relative">
-      <div className="max-w-[1240px] w-full mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+    <section className="bg-green text-white py-6">
+      <div className="max-w-800 w-full mx-auto px-4 grid md:grid-cols-2 gap-8 items-center relative">
         {/* Left column */}
         <div>
           <h1 className="text-5xl font-bold text-yellow-400">Little Lemon</h1>
@@ -12,9 +13,7 @@ export default function Hero() {
             We are a family-owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <button className="btn bg-yellow-400 text-black font-bold hover:bg-yellow-300 transition">
-            Reserve a Table
-          </button>
+          <Button>Reserve a Table</Button>
         </div>
 
         {/* Right column */}
@@ -22,7 +21,7 @@ export default function Hero() {
           <img
             src={heroImage}
             alt="Chef with plate"
-            className="max-w-md rounded-xl shadow-2xl absolute top-12 w-80"
+            className="max-w-md rounded-xl shadow-2xl absolute top-0 w-70 right-3"
           />
         </div>
       </div>
