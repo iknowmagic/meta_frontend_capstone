@@ -34,13 +34,6 @@
   --font-body: 'Karla', sans-serif;
   --font-display: 'Markazi Text', serif;
 
-  --text-display: 5.33rem; /* Display Title - 64pt */
-  --text-subtitle: 3.33rem; /* Subtitle - 40pt */
-  --text-lead: 1.5rem; /* Lead text / Card title - 18pt */
-  --text-section: 1.67rem; /* Section titles - 20pt */
-  --text-body: 1.33rem; /* Paragraph text - 16pt */
-  --text-highlight: 1.33rem; /* Highlight text - 16pt */
-
   --lh-body: 1.5;
   --lh-display: 1.1;
   --lh-subtitle: 1.2;

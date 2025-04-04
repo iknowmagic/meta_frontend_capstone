@@ -1,9 +1,9 @@
-function Main() {
-  return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-display font-bold">Main</h1>
-      <p className="text-lg">This is the main content area.</p>
-    </div>
-  )
+import { ReactNode } from 'react'
+
+interface MainProps {
+  children: ReactNode
 }
-export default Main
+
+export default function Main({ children }: MainProps) {
+  return <main className="min-h-screen">{children}</main>
+}

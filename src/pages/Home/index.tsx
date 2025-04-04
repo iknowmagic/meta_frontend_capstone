@@ -1,17 +1,9 @@
-import Header from '../../components/Header'
-import Nav from '../../components/Nav'
-import Footer from '../../components/Footer'
-import Main from '../../components/Main'
+import Hero from '../../components/Hero'
 
-function Home() {
+export default function Home() {
   return (
     <>
-      <Header />
-      <Nav />
-      <Main />
-      <Footer />
+      <Hero />
     </>
   )
 }
-
-export default Home
