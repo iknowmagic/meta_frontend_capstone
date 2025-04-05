@@ -3,7 +3,6 @@ import Card from '@/components/Card'
 import Button from '@/components/Button'
 import { useSiteStore } from '@/stores/siteStore'
 import Rating from '@/components/Rating'
-import Carousel from '@/components/Carousel'
 
 export default function Home() {
   const testimonials = useSiteStore((state) => state.testimonials)
@@ -26,25 +25,22 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-base-200 py-12">
+      {/* a nice bluish background with tailwind colors */}
+      <section className="bg-light-gray py-12">
         <div className="mx-auto px-4 w-full max-w-[800px]">
           <h2 className="mb-8 font-bold text-2xl text-center">
             What Our Customers Say
           </h2>
-          <div className="">
-            <Carousel
-              numItems={3}
-              sameHeight={true}
-              items={testimonials.map((t) => (
-                <Rating
-                  key={t.id}
-                  name={t.name}
-                  image={t.image}
-                  note={t.note}
-                  rating={t.rating}
-                />
-              ))}
-            />
+          <div className="justify-items-center gap-4 grid grid-cols-1 md:grid-cols-4">
+            {testimonials.map((t) => (
+              <Rating
+                key={t.id}
+                name={t.name}
+                image={t.image}
+                note={t.note}
+                rating={t.rating}
+              />
+            ))}
           </div>
         </div>
       </section>
