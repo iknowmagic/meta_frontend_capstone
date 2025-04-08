@@ -1,0 +1,39 @@
+{
+  "name": "React Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "keyboard.dispatch": "keyCode",
+        "keyboard.layout": "com.apple.keylayout.Dvorak",
+        "redhat.telemetry.enabled": false,
+        "files.autoSave": "onFocusChange", // Enable autosave after focus change
+        "editor.formatOnSave": true, // Enable Prettier auto-formatting on save
+        "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+        "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[python]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+        "[java]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+        "github.copilot.enable": true, // Auto-enable GitHub Copilot
+        "terminal.integrated.defaultProfile.linux": "zsh", // Set terminal to zsh for Linux
+        "terminal.integrated.defaultProfile.osx": "zsh" // Set terminal to zsh for macOS
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install"
+}
